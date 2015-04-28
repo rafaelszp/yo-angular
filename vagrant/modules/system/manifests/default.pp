@@ -15,6 +15,12 @@ class system::default {
 			require => Exec["makecache"],
 	}
 
+	exec {
+		["disable-firewall"]:
+			unless 	=> "/usr/bin/systemctl status firewalld   | grep -i dead",
+			command => "/usr/bin/systemctl disable firewalld && /usr/bin/systemctl stop firewalld",
+	}
+
 	package { 
 		["sysstat","ntpdate","net-tools","wget","git","samba"]:
 			ensure => installed,
