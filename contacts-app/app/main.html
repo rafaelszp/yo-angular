@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf8"/>
+	<base href="/"/>
+	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="src/css/bootstrap.min.css"/>
+</head>
+<body ng-app="ContactsApp">
+	<div class="container">
+		<div class="page-header">
+			<h1>Contatos</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-12" ng-view></div>
+		</div>
+	</div>
+
+<!-- Libraries -->
+	<script type="application/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+	<script type="application/javascript" src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="application/javascript" src="lib/angular/angular.min.js"></script>
+	<script type="application/javascript" src="lib/angular-route/angular-route.min.js"></script>
+	<script type="application/javascript" src="lib/angular-resource/angular-resource.min.js"></script>
+	<script type="application/javascript" src="lib/angular-messages/angular-messages.min.js"></script>
+
+	<!-- Application -->
+	<script type="application/javascript" src="src/js/app.js"></script>
+
+	<!-- Controllers -->
+	<script type="application/javascript" src="src/js/controllers/contact/list.js"></script>
+	<script type="application/javascript" src="src/js/controllers/contact/new.js"></script>
+
+	<!-- Factories -->
+	<script type="application/javascript" src="src/js/factories/contact.js"></script>
+
+	<!-- Filters -->
+	<script type="application/javascript" src="src/js/filters/contact.js"></script>
+
+	<!-- Directives -->
+	<script type="application/javascript" src="src/js/directives/contact.js"></script>	
+
+</body>
+</html>
