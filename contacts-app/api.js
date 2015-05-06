@@ -30,6 +30,7 @@ router
 router
 	.param('id',function(req,res,next){
 		req.dbQuery = {id: parseInt(req.params.id,10)};
+		next(); 
 	})
 	.route('/contact/:id')
 	.get(function(req,res){
@@ -43,13 +44,13 @@ router
 		delete contact.$resolved;
 		db.update(req.dbQuery,contact, function(err,data){
 			res.json(data[0]);
-		})
+		});
 	})
-	.delete(function(req,res){
-		db.delete(req.dbQuery,function(req,res){
+	.delete(function(req, res){
+		db.delete(req.dbQuery,function(){
 			db.delete(req.dbQuery, function(){
 				res.json(null);
 			})
-		})
+		});
 	});
 module.exports = router;

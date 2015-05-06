@@ -14,6 +14,10 @@ angular.module(
 			.when("/contact/new",{
 				controller: "NewCtrl",
 				templateUrl: "views/new.html" 
+			})
+			.when("/contact/:id",{
+				controller: 'SingleCtrl',
+				templateUrl: 'views/single.html'
 			});
 		$locationProvider.html5Mode(true);
 	});

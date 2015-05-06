@@ -1,5 +1,7 @@
 angular.module('ContactsApp')
-	.controller("ListCtrl",function($scope,Contact,$location){
+	.controller("ListCtrl",function($scope, $rootScope, Contact,$location){
+
+		$rootScope.PAGE	=	"all";
 		
 		$scope.contacts = Contact.query();
 		$scope.fields = ['firstName','lastName'];

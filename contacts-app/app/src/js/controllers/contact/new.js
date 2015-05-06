@@ -1,5 +1,8 @@
 angular.module('ContactsApp')
-	.controller('NewCtrl',function($scope,Contact,$location){
+	.controller('NewCtrl',function($scope, $rootScope, Contact,$location){
+
+		$rootScope.PAGE = "new";
+
 		$scope.contact = new Contact({
 			firstName: ['','text'],
 			lastName: ['','text'],

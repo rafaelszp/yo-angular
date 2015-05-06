@@ -16,4 +16,11 @@ angular.module('ContactsApp')
 			});
 			return result;
 		};
+	})
+	.filter('camelCase',function(){
+		return function (input){
+			return input.toLowerCase().replace(/ (\w)/g, function(match, letter){
+				return letter.toUpperCase();
+			});
+		};
 	});
