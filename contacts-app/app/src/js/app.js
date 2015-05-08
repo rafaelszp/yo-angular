@@ -18,6 +18,10 @@ angular.module(
 			.when("/contact/:id",{
 				controller: 'SingleCtrl',
 				templateUrl: 'views/single.html'
+			})
+			.otherwise({
+				redirectTo: 'contacts'
 			});
+			
 		$locationProvider.html5Mode(true);
 	});
