@@ -1,0 +1,21 @@
+<div ng-controller='PessoaCtrl'>
+	<form name='formPessoa' novalidate class='form-horizontal' >
+
+		<input-field record='pessoa' field='nome' label='Nome' live='false' required='true' type='text'></input-field>
+		<input-field record='pessoa' field='email' label='E-mail' live='false' type='email' required="true"></input-field>
+		<input-field record='pessoa' field='endereco' label='Endereço' live='false' type='text'></input-field>
+		<input-field record='pessoa' field='datanasc' label='Data Nasc.' live='false' type='date'></input-field>
+		<input-field record='pessoa' field='homepage' label='Home Page' live='false' type='url'></input-field>
+
+		<div class='row form-group'>
+			<div class="col-sm-offset-2">
+				<button class="btn btn-primary" ng-click="save()">
+					<span class="glyphicon glyphicon-floppy-save">
+					&nbsp;Salvar Pessoa
+					</span>
+				</button>
+			</div>
+		</div>
+
+	</form>
+<div>

@@ -5,13 +5,65 @@
 	<base href="/"/>
 	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<!--BEGIN_APP_CSS-->
+	<link rel="stylesheet" href="css/estilo.css"/>
+<!--END_APP_CSS-->
 </head>
 <body ng-app="FiegLayout">
-	<div class="container">
-		<div class="page-header">
-			<h1>FIEG Layout</h1>
+	<div class="container-fluid">
+		<div class="page-header main_header">
+			<div class='row'>
+				<div class='col-xs-1'>
+					<img src="css/img/marcaSISTEMAFIEG_480x180.jpg"/>
+				</div>
+				<div class='col-xs-9'>
+					<h1>FIEG Layout</h1>
+				</div>					
+				<div class='col-xs-2 info_perfil'>
+					<ul class='nav navbar-nav'>
+
+						<li class='dropdown'>
+							<a href="#" class='dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'>Nome usuário<span class='caret'></span></a>
+							<ul class='dropdown-menu' role='menu'>
+								<li><a href='#'><span class='glyphicon glyphicon-user'>&nbsp;Perfil</span></a></li>
+								<li><a href='#'><span class='glyphicon glyphicon-log-out'>&nbsp;Sair</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>	
+			</div>
+			
 		</div>
 		
+		<nav class='navbar navbar-default'>
+			<div class='container-fluid'>
+				<ul class='nav navbar-nav'>
+					<li><a href='#'>Cadastro</a></li>
+					<li><a href='#'>Movimento</a></li>
+					<li><a href='#'>Relatórios</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class='container-fluid'>
+			<div class='row'>
+				
+				<h2>Formulário exemplo</h2>
+
+				<div class='col-md-12' ng-include='"views/pessoa/formulario.html"'/>
+							
+			</div>
+
+			<div class='row'>
+				
+				<h2>Outras informações</h2>
+
+				<div class='col-md-12' />
+							
+			</div>
+		</div>
+
+	
 	</div>
 
 <!--BEGIN_LIB-->
@@ -29,12 +81,15 @@
 	<script type="application/javascript" src="js/app.js"></script>
 
 	<!-- Controllers -->
+	<script type="application/javascript" src="js/pessoa/controller.js"></script>
 
 	<!-- Factories -->
 
 	<!-- Filters -->
 
 	<!-- Directives -->
+	<script type='application/javascript' src='js/common/directives/field-type.js'></script>
+	<script type='application/javascript' src='js/common/directives/input-field.js'></script>
 
 <!--END_APP-->	
 

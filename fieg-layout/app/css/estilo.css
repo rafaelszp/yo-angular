@@ -1,0 +1,29 @@
+.main_page {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.main_header {
+	background: url('img/bg_tile_h.png');
+	margin-top: 0;
+	padding-bottom: 2px;
+	color: white;
+}
+
+.main_header h1 {
+	margin-top: 6px;
+}
+
+.main_header img {
+	margin-top: 12px;
+	margin-left: 5px;
+	height: 30px;
+}
+
+.info_perfil {
+	
+}
+
+.info_perfil a{
+	
+}
