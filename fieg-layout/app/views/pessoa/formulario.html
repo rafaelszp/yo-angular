@@ -1,6 +1,7 @@
 <div ng-controller='PessoaCtrl'>
 	<form name='formPessoa' novalidate class='form-horizontal' >
 
+		<cpf-field record='pessoa' field='cpf' label='CPF' live='false' required='true'></cpf-field>
 		<input-field record='pessoa' field='nome' label='Nome' live='false' required='true' type='text'></input-field>
 		<input-field record='pessoa' field='email' label='E-mail' live='false' type='email' required="true"></input-field>
 		<input-field record='pessoa' field='endereco' label='Endereço' live='false' type='text'></input-field>
