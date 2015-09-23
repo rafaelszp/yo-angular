@@ -6,11 +6,14 @@
 .main_header {
 	background: url('img/bg_tile_h.png');
 	margin-top: 0;
-	padding-bottom: 2px;
+	margin-bottom: 0;
 	color: white;
+	padding: 0;
+	border: 0;
 }
 
 .main_header h1 {
+	margin-left: 2em;
 	margin-top: 6px;
 }
 
@@ -18,6 +21,7 @@
 	margin-top: 1em;
 	margin-left: 2.5em;
 	height: 2.083333333em;
+
 }
 
 .info_perfil {
@@ -26,4 +30,10 @@
 
 .info_perfil a{
 	
+}
+
+.fieg-navbar{
+	background: url('img/bg_tile_h.png');
+	border: 0;
+	border-radius: 0;
 }

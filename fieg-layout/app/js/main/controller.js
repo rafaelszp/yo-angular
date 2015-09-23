@@ -10,4 +10,11 @@ angular.module('FiegLayout')
 			$scope.displayInfo = obj.displayInfo;
 		});
 
+	})
+	.controller('BlankCtrl',function($scope,$rootScope){
+		$scope.$emit('update-viewinfo',{
+			title: '',
+			displayInfo: undefined,
+		});
+
 	});
