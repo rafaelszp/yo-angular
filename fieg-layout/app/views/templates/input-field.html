@@ -1,6 +1,6 @@
 <div class='row form-group' ng-form='{{field}}' ng-class="{'has-error': {{field}}.$dirty && {{field}}.$invalid }">
-	<label class='col-md-2 control-label'>{{label}}<span ng-if="required">*</span></label>
-	<div class='col-md-6'>
+	<label class='col-sm-2 control-label'>{{label}}<span ng-if="required">*</span></label>
+	<div class='col-sm-6'>
 		<div class='input-group' ng-switch="required">
 
 			<input ng-switch-when="true" type='{{type}}' ng-model='record[field][0]' class='form-control' ng-change="update()" ng-blur="blurUpdate()" required/>
@@ -15,7 +15,7 @@
 			</span>
 		</div>
 	</div>
-	<div class='col-md-4' ng-messages='{{field}}.$error' ng-show="{{field}}.$dirty && {{field}}.$invalid">
+	<div class='col-sm-4' ng-messages='{{field}}.$error' ng-show="{{field}}.$dirty && {{field}}.$invalid">
 		<p class="control-label" ng-message="required">{{ label }} é obrigatório.</p>
 		<p class="control-label" ng-repeat="(k,v) in types" ng-message="{{k}}">{{label}} {{v[1]}}</p>
 	</div>
